@@ -29,6 +29,10 @@
     top: 0;
     left: 0;
 }
+.mobile,#close{
+    display: none;
+}
+
 
 .nav ul{
     display: flex;
@@ -193,8 +197,8 @@
 
 .product{
     margin: 50px 0;
-    width: 300px;
-   border: 1px solid gray;
+    width: 330px;
+   border: 1px solid rgba(128, 128, 128, 0.203);
    border-radius: 10px;
    position: relative;
    cursor: pointer;
@@ -304,4 +308,341 @@
     border: 1px solid #fff;
     transition: 0.5s;
     cursor: pointer;
+}
+.banner3{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner3-container{
+    width: 32%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    align-content: center;
+    background-image: url(img/banner/b7.jpg);
+    color: #fff;
+    padding: 0 20px;
+}
+.banner3-container:nth-child(2){
+    background-image: url(img/banner/b4.jpg);   
+}
+.banner3-container:nth-child(3){
+    background-image: url(img/banner/b18.jpg);   
+}
+.banner3-container h1{
+    margin: 10px 0;
+}
+
+.newsletter{
+    width: 100%;
+    margin: 50px 0;
+    height: 160px;
+    background-color: rgba(6, 6, 51, 0.936);
+    background-image: url(img/banner/b14.png);
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+}
+
+.newsletter-des h3{
+    color: whitesmoke;
+    margin: 10px 0;
+    font-size: 19px;
+    font-weight: 600;
+}
+.newsletter-des p{
+    color: rgba(128, 128, 128, 0.842);
+    font-weight: 600;
+    font-size: 13px;
+}
+.newsletter-des span{
+    color:rgba(217, 133, 31, 0.874);
+}
+
+.newsletter-input{
+    width: 50%;
+    text-align: end;
+}
+.newsletter-input input{
+    width: 60%;
+    line-height: 45.5px;
+    padding: 0 20px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px;
+    border: none;
+    outline: none;
+}
+.newsletter-input button{
+    border-top-left-radius: 0;
+    border-bottom-left-radius:0;
+    margin-left: -6px;
+    background-color:rgb(0, 128, 119) ;
+    color: #fff;
+}
+
+.sec-1{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+}
+.footer p{
+    color: rgba(128, 128, 128, 0.673);
+    font-size: 13px;
+    margin-top: 10px;
+}
+.footer p:hover , .social i:hover{
+    color: green;
+    cursor: pointer;
+}
+
+.footer h2{
+   color: rgba(0, 0, 0, 0.764);
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.sec-1 div{
+    width: 300px;
+}
+
+.contact-des{
+    margin-bottom:  30px;
+    width: 330px;
+}
+.contact-des img{
+    margin-bottom: 30px;
+}
+
+.app-img{
+    display: flex;
+}
+
+.app-img img{
+    border: 1px solid green;
+    margin: 20px 5px;
+    border-radius: 5px;
+}
+.social i{
+    color: rgba(128, 128, 128, 0.86);
+}
+.pay{
+    margin: 20px 0;
+}
+
+.copyright {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px ;
+    margin-top: 10px ;
+}
+
+
+
+
+@media (max-width:777px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .padding-p1{
+        padding: 20px 40px;
+    }
+
+    #navbar{
+        
+        display: block;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -400px;
+        padding: 50px;
+        justify-content: start;
+        align-items: flex-start;
+        width: 40%;
+        height: 100vh;
+        /* background-color: whitesmoke; */
+        backdrop-filter: blur(16px);
+        transition: 0.5s;
+        
+    }
+    #cart{
+        display: none;
+    }
+    .mobile{
+      display: block;  
+    }
+    #close{
+        position: absolute;
+        top: 30px ;
+        display: block;
+        
+    }
+
+    #navbar li {
+        margin:  20px 0;  
+        list-style: none;
+    }
+
+    #navbar.active{
+        right: 0;
+    }
+    .mobile a {
+
+        color: black;
+        margin-right: 10px;
+    }
+
+    .hero{
+        
+        background-position: top 25% left 65%;
+    }
+
+    .features .container {
+        justify-content: space-around;
+        gap: 20px;
+    }
+    
+    .product-container {
+        justify-content: space-around;
+    }
+    
+
+    .banner-1 {
+        height: 250px;
+    }
+    .banner-1 h1 {
+        font-size: 30px;
+    }
+
+    .banner-container {
+        width: 49%;
+        height: 300px;
+    }
+
+    .banner3-container {
+        width: 32%;
+        height: 200px;
+    }
+    .newsletter {
+        padding: 0 40px;
+    }
+
+    .newsletter-des h3{
+        font-size: 15px;
+    }
+    .newsletter-des p{
+        font-size: 11px;
+    }
+
+}
+
+@media (max-width:490px) {
+    .padding-p1 {
+        padding: 10px 20px;
+    }
+    .header {
+        padding: 22px 40px;
+    }
+    .hero {
+        background-position: top 25% left 75%;
+    }
+    .hero h4{
+        font-size: 10px;
+    }
+    
+    .hero h2{
+        font-size: 30px;
+    }
+    .features .container {
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .feature-container{
+        /* flex-basis: 5%; */
+        width: 150px;
+        height: 160px;
+        padding: 2px;
+    }
+    
+    .feature-container img{
+        width: 130px
+    }
+
+    .feature-container h6{
+        margin-top: 10px;
+        padding: 5px 4px;
+    }
+
+    .featured-products h1,.arrival h1{
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+    .featured-products p,.arrival p{
+        font-size: 12px;
+    }
+
+    .product{
+        margin: 10px 0;
+        width: 100%
+    }
+
+    .banner-1 h1 {
+        font-size: 15px;
+    }
+
+    .banner-1 {
+        margin: 10px 0;
+        height: 210px;
+    }
+
+    .banner3{
+        flex-direction: column;
+    }
+    
+    .banner3-container{
+        width: 100%;
+        margin-bottom: 10px;
+        height: 200px;
+        
+    }
+    .banner2{
+        flex-direction: column;
+    }
+    
+    .banner-container{
+        margin-bottom: 10px;
+        width: 100%;
+        height: 300px;
+      
+    }
+
+    .newsletter {
+        justify-content:space-around;
+        flex-direction: column;
+    }
+
+    .newsletter-input input {
+        width: 60%;
+    }
+    .newsletter-input{
+        width: 100%;
+        text-align: start;
+    }
+    .app-img {
+        
+        flex-direction: column;
+    }
+    .app-img img {
+        
+       width: 50%;
+    }
+    .sec-1 div{
+        width: 100%;
+    }
 }
